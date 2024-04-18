@@ -1,17 +1,13 @@
 package principal;
 
-public class Main {
+public class Auxiliar {
 	/**
-	 * Método principal que muestra ejemplos de uso de la calculadora.
+	 * Realiza una operación utilizando la calculadora.
 	 *
-	 * @param args Los argumentos de la línea de comandos (no se utilizan en este
-	 *             ejemplo).
+	 * @param num1 El primer número entero.
+	 * @param num2 El segundo número entero.
 	 */
-	public static void main(String[] args) {
-		// Ejemplos de uso de la calculadora
-		int num1 = 10;
-		int num2 = 5;
-
+	public static void realizarOperacion(int num1, int num2) {
 		// Suma
 		int resultSum = Calculadora.sumar(num1, num2);
 		System.out.println("Suma de " + num1 + " y " + num2 + " es: " + resultSum);
@@ -27,7 +23,5 @@ public class Main {
 		// División
 		double resultDivide = Calculadora.dividir(num1, num2);
 		System.out.println("División de " + num1 + " entre " + num2 + " es: " + resultDivide);
-		Auxiliar.realizarOperacion(num1, num2);
 	}
-
 }
